@@ -1,23 +1,35 @@
 ## Figure 1: Creating new Student profile
 
-![Figure 1](figures/task1.jpg)
+<p>
+    <img src="figures/task1.png" width="220" height="240" />
+</p>
 
 ## Figure 2: Checking with already existing email
 
-![Figure 2](figures/task2.jpg)
+<p>
+    <img src="figures/task2.png" width="220" height="240" />
+</p>
 
 ## Figure 3: Details of All Students
 
-![Figure 3](figures/task3.jpg)
+<p>
+    <img src="figures/task3.png" width="220" height="240" />
+</p>
 
 ## Figure 4: Delete Student with email
 
-![Figure 4](figures/task4.jpg)
+<p>
+    <img src="figures/task4.png" width="220" height="240" />
+</p>
 
 ## Figure 5: Updating Student details with id
 
-![Figure 5](figures/task5.jpg)
+<p>
+    <img src="figures/task5.png" width="220" height="240" />
+</p>
 
 ## Figure 6: Checking the updation
 
-![Figure 6](figures/task6.jpg)
+<p>
+    <img src="figures/task6.png" width="220" height="240" />
+</p>
