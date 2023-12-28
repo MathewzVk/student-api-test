@@ -20,6 +20,7 @@ public class StudentService {
         Student student = Student.builder()
                 .name(studentRequest.getName())
                 .email(studentRequest.getEmail())
+                .gender(studentRequest.getGender())
                 .password(studentRequest.getPassword())
                 .build();
 
@@ -29,7 +30,7 @@ public class StudentService {
     public Optional<StudentResponse> findStudentByEmail(String email){
         return repository.findByEmail(email).map(
                 student -> new StudentResponse
-                        (student.getId(),student.getName(),student.getEmail(),student.getPassword()));
+                        (student.getId(),student.getName(),student.getEmail(),student.getGender(), student.getPassword()));
     }
 
     public List<StudentResponse> allStudents(){
@@ -39,7 +40,7 @@ public class StudentService {
     public Optional<StudentResponse> findById(Long id){
         return repository.findById(id).map(
                 student -> new StudentResponse
-                        (student.getId(),student.getName(),student.getEmail(),student.getPassword()));
+                        (student.getId(),student.getName(),student.getEmail(),student.getGender(), student.getPassword()));
 
     }
 
@@ -48,6 +49,7 @@ public class StudentService {
                 .id(student.getId())
                 .name(student.getName())
                 .email(student.getEmail())
+                .gender(student.getGender())
                 .password(student.getPassword())
                 .build();
     }
@@ -64,6 +66,7 @@ public class StudentService {
             Student existingStudent = existingStudentOptional.get();
             existingStudent.setName(studentRequest.getName());
             existingStudent.setEmail(studentRequest.getEmail());
+            existingStudent.setGender(studentRequest.getGender());
             existingStudent.setPassword(studentRequest.getPassword());
 
             repository.save(existingStudent);
